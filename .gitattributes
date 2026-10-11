@@ -1,0 +1,5 @@
+# A Windows project: text files are CRLF in every checkout, so a release packaged anywhere has the
+# same bytes (minecraft/.gitattributes keeps gradlew LF).
+* text=auto eol=crlf
+*.jar binary
+*.png binary

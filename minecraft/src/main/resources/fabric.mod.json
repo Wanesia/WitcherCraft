@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "witchercraft",
+  "version": "${version}",
+  "name": "WitcherCraft",
+  "description": "Play The Witcher 3 as a Minecraft player: Minecraft physics, inventory, blocks and combat inside the Witcher's world. Based on SkyCraft by chasmlol.",
+  "authors": ["WitcherCraft contributors"],
+  "contributors": ["chasmlol (SkyCraft)"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["dev.witchercraft.WitcherCraft"],
+    "client": ["dev.witchercraft.client.WitcherCraftClient"]
+  },
+  "mixins": [
+    "witchercraft.mixins.json",
+    { "config": "witchercraft.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

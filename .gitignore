@@ -1,0 +1,26 @@
+# Test and run output
+logs/
+*.log
+
+# Native build output (native\build and any parallel build-* dirs)
+native/build*/
+*.pdb
+
+# Minecraft mod build output, Gradle cache, and the dev instance (worlds, screenshots, options)
+minecraft/build/
+minecraft/.gradle/
+minecraft/run/
+minecraft/run-prod/
+
+# Release packaging output (symbols/: debug symbols, kept private)
+dist/
+symbols/
+release/.cache/
+
+# Local tooling
+.mc-test-lock/
+__pycache__/
+*.pyc
+.vs/
+.idea/
+*.iml
